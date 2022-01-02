@@ -20,10 +20,10 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wp_naked-art.world' );
+define( 'DB_NAME', 'naked-art.world' );
 
 /** Database username */
-define( 'DB_USER', 'wp_root' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
 define( 'DB_PASSWORD', '12345' );
@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', '12345' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         'l[S=rV>|wbB:#Ip1%;+8M2u,H5Li;DcVz`o!@R,pM|p3|_WqrZ^<MMIy/1I[CAKo' );
+define( 'SECURE_AUTH_KEY',  'VK0a[0c;J+4PT#[FARxRq_u@Hf|=6omIe1S-dA-z!OT9I`Yunzk#du5V[Crju*Hr' );
+define( 'LOGGED_IN_KEY',    'ZGR?G.ff[}q@cRKq$};v_8@ZHdXH86L.J+!G4@0ojGJ0-.(,l/,LXDO.R.tHZw5?' );
+define( 'NONCE_KEY',        '.]pUXY00Tk*y1@$pk]</%IP426W!Fs{82:FPOy_$PYJ1hzDoFP$>ME;)w$-1JRGv' );
+define( 'AUTH_SALT',        'J%Y^umM 2qp4~6Cn@UrE,E3TUyW}`xSOCj/_ut7lLRubcTM_7Oe6}0m2=fkz0*bf' );
+define( 'SECURE_AUTH_SALT', 'nkP(< M#l.EqFE%z=VQn_VUwG:&I6j-;dmn}=F:k%due STuYWjRp?E3;Tf?dLAI' );
+define( 'LOGGED_IN_SALT',   '8/pzJPNW-;Q?JtG[K~67y*voU0qv0%GooF7d#tHe{mqFaqKE.lG]BP#cKl!&_2.P' );
+define( 'NONCE_SALT',       '}YLHqjZtWgw%YXKMKf::=.@qo>2*D6=C=Fo,>Zds$dDxux3~H.K(~`B{#{eZ8NmA' );
 
 /**#@-*/
 
