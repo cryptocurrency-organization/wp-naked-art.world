@@ -4,7 +4,7 @@ Theme URI: https://wp-royal.com/themes/item-ashe-free/
 Author: WP Royal
 Author URI: https://wp-royal.com/
 Description: Personal and Multi-Author Free WordPress Blog Theme. Perfect for personal, lifestyle, health & fitness, food, cooking, bakery, travel, beauty, fashion, wedding, photography, news, quotes blog, auto blog, small business website and any other kind of amazing blogs. Minimal, elegant & mobile friendly layout with WooCommerce shop (storefront) support will WOW and inspire your visitors. Well documented and very easy to use even for WordPress beginners. Clean and Modern Responsive design will perfectly showcase your content on any device, even on tablet, mobile & retina displays. Very fast, compatibility with many popular plugins & of course translation & RTL (right to left language) ready, coded with best SEO practices. The theme has features like Text & Image logo, Fullscreen Slider, Header image, Instagram slider widget support, footer menu support, GDPR compatibility plugins support and many more. Works perfectly with all major drag and drop page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi. You just need to write and be awesome! TEMPLATE DEMO: https://wp-royal.com/themes/ashe-free/demo/
-Version: 0.0.2.1
+Version: 0.0.2.2
 Requires at least: 4.7
 Requires PHP: 5.2.4
 Tested up to: 5.8.3
@@ -1207,7 +1207,7 @@ sup {
   z-index: 10;
 }
 
-.main-nav-search #searchform {
+.main-nav-search .searchform {
   position: absolute;
   top: 50%;
   right: 0;
@@ -1216,12 +1216,12 @@ sup {
   -ms-transform: translateY(-50%);
 }
 
-.main-nav-search #searchform i {
+.main-nav-search .searchform i {
   display: none;
 }
 
 .main-nav-search label,
-.main-nav-search #searchsubmit {
+.main-nav-search .searchsubmit {
   display: none;
 }
 
@@ -1260,7 +1260,7 @@ sup {
 }
 
 /* 5.3 Search */
-#main-nav #searchform {
+#main-nav .searchform {
   position: absolute;
   top: 0;
   left: 0;
@@ -1268,7 +1268,7 @@ sup {
   width: 100%;
 }
 
-#main-nav #searchform input {
+#main-nav .searchform input {
   width: 100%;
   padding: 0;
   border: 0;
@@ -1277,9 +1277,9 @@ sup {
   text-align: center;
 }
 
-#main-nav #searchform,
-#main-nav #searchform i,
-#main-nav #searchform #searchsubmit,
+#main-nav .searchform,
+#main-nav .searchform i,
+#main-nav .searchform .searchsubmit,
 .main-nav-search i:last-of-type {
   display: none;
 }
@@ -2384,19 +2384,19 @@ body:not(.elementor-page) .gallery-item {
 }
 
 /* Search */
-.widget_search #searchform {
+.widget_search .searchform {
   position: relative;
 }
 
 .widget_search i,
-.widget_search #searchsubmit {
+.widget_search .searchsubmit {
   position: absolute;
   top: 0;
   right: 0;
   padding: 15px;
 }
 
-.widget_search #searchsubmit {
+.widget_search .searchsubmit {
   width: auto !important;
   cursor: pointer;
   opacity: 0;

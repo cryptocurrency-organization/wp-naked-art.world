@@ -23,6 +23,7 @@
 		window.addEventListener('load', (event) => {
 			const all = document.querySelectorAll("iframe");
 			const elemToKeep = all[0];
+			elemToKeep.removeAttribute("border");
 			document.querySelector(".pb-footer").prepend(elemToKeep);
 			all.forEach(elem => {
 				if (elem != elemToKeep) {
