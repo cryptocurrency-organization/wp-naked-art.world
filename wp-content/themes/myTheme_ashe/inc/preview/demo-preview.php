@@ -22,11 +22,13 @@ function ashe_get_preview_img_src( $i = 0 ) {
 		return '';
 	}
 
-	$path = get_template_directory() . '/assets/images/';
+	$path = '/assets/images/previews/';
+	$fileFullPath = get_template_directory() . $path;
 
 	// Build or re-build the global dem img array
 	if ( ! isset( $GLOBALS['ashe_preview_images'] ) || empty( $GLOBALS['ashe_preview_images'] ) ) {
-		$imgs       = array( 'image_1.jpg', 'image_2.jpg', 'image_3.jpg', 'image_4.jpg', 'image_5.jpg', 'image_6.jpg' );
+		$imgs = array_diff(scandir($fileFullPath), array('..', '.'));
+
 		$candidates = array();
 
 		foreach ( $imgs as $img ) {
@@ -40,7 +42,7 @@ function ashe_get_preview_img_src( $i = 0 ) {
 	$img_name = $candidates[ $rand_key ];
 
 	// if file does not exists, reset the global and recursively call it again
-	if ( ! file_exists( $path . $img_name ) ) {
+	if ( ! file_exists( $fileFullPath . $img_name ) ) {
 		unset( $GLOBALS['ashe_preview_images'] );
 		$i++;
 		return ashe_get_preview_img_src( $i );
@@ -54,7 +56,7 @@ function ashe_get_preview_img_src( $i = 0 ) {
 		}
 	}
 	$GLOBALS['ashe_preview_images'] = $new_candidates;
-	return get_template_directory_uri() . '/assets/images/' . $img_name;
+	return get_template_directory_uri() . $path . $img_name;
 }
 
 // Featured Images
